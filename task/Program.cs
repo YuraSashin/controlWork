@@ -27,13 +27,13 @@ int CountNewArray(string[] arr, int lenghtNum)//Нахождение длинн�
 }
 void FillingNewStringArray(string[] oldArray, string[] newArray, int newLenght)//Заполненение нового массива
 {
-    int newArrayIndex = default;
+    int j = default;
     for (int i = 0; i < oldArray.Length; i++)
     {
         if (oldArray[i].Length <= newLenght)
         {
-            newArray[newArrayIndex] = oldArray[i];
-            newArrayIndex++;
+            newArray[j] = oldArray[i];
+            j++;
         }
     }
 }
